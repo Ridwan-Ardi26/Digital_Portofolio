@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridwan Ardiansyah - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">RA</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+    </nav>
+
+    <div class="main-container">
+        <div class="col-left">
+            <section id="home" class="hero-section">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Ridwan<br>Ardiansyah</h1>
+                <h2 class="title">Quality Data Analyst | Dashboard Developer</h2>
+                <p class="desc">Saya berpengalaman dalam analisis data manufaktur sepatu, pengembangan dashboard interaktif, otomasi data proses menggunakan Google Apps Script, dan pembuatan aplikasi AppSheet untuk meningkatkan efisiensi operasional.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Lihat Project Saya <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="btn btn-secondary">Download CV <i class="fa-solid fa-download"></i></a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </section>
+
+            <section id="projects" class="projects-section">
+                <div class="section-header">
+                    <h3>Projects</h3>
+                    <a href="#" class="view-all">Lihat Semua Project &rarr;</a>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="img-placeholder">[Gambar Dashboard Weight]</div>
+                        <h4>Dashboard Weight Monitoring</h4>
+                        <p>Dashboard untuk memantau konsistensi berat sepatu per size, model, dan periode.</p>
+                        <div class="tags">
+                            <span>Looker Studio</span>
+                            <span>BigQuery</span>
+                            <span>Google Sheet</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="img-placeholder">[Gambar Website Undangan Ridwan & Ahda]</div>
+                        <h4>Digital Invitation Website</h4>
+                        <p>Website undangan digital responsive dengan fitur RSVP, galeri, dan countdown.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-right">
+            <section id="about" class="about-section card-box">
+                <div class="about-grid">
+                    <div class="about-me">
+                        <h3>About Me</h3>
+                        <p>Saya lulusan D3 Teknologi Pengolahan Kulit Politeknik ATK Yogyakarta. Saat ini bekerja di departemen Quality Product Integrity dengan fokus pada analisis data, dashboard, dan otomasi proses.</p>
+                        <ul class="about-info">
+                            <li><i class="fa-solid fa-graduation-cap"></i> D3 Teknologi Pengolahan Kulit</li>
+                            <li><i class="fa-solid fa-briefcase"></i> Quality Product Integrity</li>
+                            <li><i class="fa-solid fa-location-dot"></i> Yogyakarta, Indonesia</li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-item">
+                            <span>Excel</span>
+                            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Google Apps Script</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="experience-section card-box mt-4">
+                <h3>Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - Sekarang</div>
+                        <div class="timeline-content">
+                            <h4>Quality Product Integrity <span class="badge">Full Time</span></h4>
+                            <p class="company">Footwear Manufacturing</p>
+                            <p>Analisis data quality, dashboard development, automasi laporan, validasi data, dan continuous improvement.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 - 2022</div>
+                        <div class="timeline-content">
+                            <h4>Quality Control Inspector <span class="badge">Full Time</span></h4>
+                            <p class="company">Footwear Manufacturing</p>
+                            <p>Memastikan kualitas produk sesuai standar, melakukan inspeksi secara berkala, dan dokumentasi hasil inspeksi.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section card-box mt-4">
+                <h3>Contact Me</h3>
+                <p>Tertarik bekerja sama atau memiliki kesempatan untuk saya? Jangan ragu untuk menghubungi saya.</p>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-envelope"></i> ridwanardiansyah@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +62 812-3456-7890</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Yogyakarta, Indonesia</li>
+                </ul>
+                <p class="note" style="margin-top: 15px; font-size: 0.85rem; color: #94a3b8;">
+                    <em>*Fokus pengerjaan proyek freelance/klien: 21.00 - 01.00 WIB</em>
+                </p>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
