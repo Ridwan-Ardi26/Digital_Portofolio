@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Project Ridwan Ardiansyah - 8 Digital Solutions for Manufacturing Excellence">
+    <title>Projects | Ridwan Ardiansyah</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==========================================
+        NAVBAR SECTION
+        ========================================== -->
+    <nav id="navbar" class="sticky-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">RA<span class="accent-dot">.</span></span>
+            </a>
+            
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                <i data-lucide="moon" class="moon-icon"></i>
+                <i data-lucide="sun" class="sun-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-navbar">
+        <!-- ==========================================
+            HEADER SECTION
+            ========================================== -->
+        <section id="projects-header" class="page-header section-padding text-center">
+            <div class="container">
+                <h1 class="page-title"><i data-lucide="layers"></i> Projects Showcase</h1>
+                <h2 class="page-subtitle accent-text">8 Digital Solutions for Manufacturing Excellence</h2>
+                <p class="page-desc">Kumpulan portfolio aplikasi automasi AppSheet dan dashboard analitik Looker Studio yang dirancang untuk mengatasi tantangan operasional, meningkatkan akurasi data, dan mendorong pengambilan keputusan berbasis data di lingkungan pabrik manufaktur.</p>
+            </div>
+        </section>
+
+        <!-- ==========================================
+            PROJECTS GRID SECTION (STATIC HTML)
+            Keterangan: Semua card dipindahkan ke sini.
+            Setiap <article> memiliki atribut data-* untuk 
+            mengirim teks ke Modal Pop-up saat diklik.
+            ========================================== -->
+        <section class="projects-content section-padding bg-alt">
+            <div class="container">
+                <div class="project-grid" id="project-grid">
+                    
+                    <!-- PROJECT 1 -->
+                    <article class="project-card card hover-effect" 
+                        data-title="QIP - Product Integrity Team Ecosystem"
+                        data-img="AppSheet Project/Menu_QIP-Product Integrity Team.png"
+                        data-desc="Ekosistem AppSheet 8 modul untuk digitalisasi validasi Trial Sample"
+                        data-problem="Proses validasi manual dan tidak terdokumentasi"
+                        data-solution="Membangun 8 aplikasi AppSheet terintegrasi: FILE, FORM, RESULT"
+                        data-tools="AppSheet, Google Sheet"
+                        data-impact="100% Digitalisasi, approval 3x lebih cepat"
+                        data-kpi="8 Aplikasi Live">
+                        <div class="project-img-wrapper">
+                            <img src="AppSheet Project/Menu_QIP-Product Integrity Team.png" alt="QIP - Product Integrity Team" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay"><i data-lucide="eye" class="view-icon"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">QIP - Product Integrity Team Ecosystem</h3>
+                            <p class="project-desc">Ekosistem AppSheet 8 modul untuk digitalisasi validasi Trial Sample</p>
+                            <div class="project-tools">
+                                <span class="tool-badge">AppSheet</span> <span class="tool-badge">Google Sheet</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="btn-secondary" style="font-size: 0.8rem; padding: 4px 8px; border:none; color: var(--accent);">Detail &rarr;</span>
+                                <div class="project-kpi"><i data-lucide="bar-chart-2"></i> 8 Aplikasi Live</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2 -->
+                    <article class="project-card card hover-effect" 
+                        data-title="QIP - People and Trainer Team Portal"
+                        data-img="AppSheet Project/Menu_QIP-People and Trainer Team.png"
+                        data-desc="Portal manajemen SDM untuk tim QIP dan Trainer"
+                        data-problem="Sulit tracking performa auditor dan jadwal rotasi"
+                        data-solution="Portal dengan modul TQC Rotation, T1QM Report, CT Inspection"
+                        data-tools="AppSheet"
+                        data-impact="Monitoring performa auditor real-time"
+                        data-kpi="3 Modul Utama">
+                        <div class="project-img-wrapper">
+                            <img src="AppSheet Project/Menu_QIP-People and Trainer Team.png" alt="QIP - People and Trainer Team Portal" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay"><i data-lucide="eye" class="view-icon"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">QIP - People and Trainer Team Portal</h3>
+                            <p class="project-desc">Portal manajemen SDM untuk tim QIP dan Trainer</p>
+                            <div class="project-tools">
+                                <span class="tool-badge">AppSheet</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="btn-secondary" style="font-size: 0.8rem; padding: 4px 8px; border:none; color: var(--accent);">Detail &rarr;</span>
+                                <div class="project-kpi"><i data-lucide="bar-chart-2"></i> 3 Modul Utama</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3 -->
+                    <article class="project-card card hover-effect" 
+                        data-title="Dashboard Measurement Product Weight"
+                        data-img="Dashboard Project/Sistem Measurement Product Weight.jpeg"
+                        data-desc="Dashboard monitoring konsistensi berat produk 552K+ sample"
+                        data-problem="Fluktuasi berat produk menyebabkan komplain"
+                        data-solution="Dashboard Looker Studio untuk tracking Avg Weight vs Standard per size"
+                        data-tools="Looker Studio, Google Sheet"
+                        data-impact="Turunkan risiko komplain berat"
+                        data-kpi="552,416 Data">
+                        <div class="project-img-wrapper">
+                            <img src="Dashboard Project/Sistem Measurement Product Weight.jpeg" alt="Dashboard Measurement Product Weight" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay"><i data-lucide="eye" class="view-icon"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Dashboard Measurement Product Weight</h3>
+                            <p class="project-desc">Dashboard monitoring konsistensi berat produk 552K+ sample</p>
+                            <div class="project-tools">
+                                <span class="tool-badge">Looker Studio</span> <span class="tool-badge">Google Sheet</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="btn-secondary" style="font-size: 0.8rem; padding: 4px 8px; border:none; color: var(--accent);">Detail &rarr;</span>
+                                <div class="project-kpi"><i data-lucide="bar-chart-2"></i> 552,416 Data</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 4 -->
+                    <article class="project-card card hover-effect" 
+                        data-title="Dashboard Summary Quality Trial Commerce"
+                        data-img="Dashboard Project/Summary Quality Trial Commerce.png"
+                        data-desc="Analisis hasil Trial Commerce dan Top Defect"
+                        data-problem="Lambatnya feedback defect ke tim Development"
+                        data-solution="Dashboard untuk visualisasi Pass Rate dan Pareto Defect"
+                        data-tools="Looker Studio"
+                        data-impact="Percepat perbaikan di sample stage"
+                        data-kpi="Pass Rate 77%">
+                        <div class="project-img-wrapper">
+                            <img src="Dashboard Project/Summary Quality Trial Commerce.png" alt="Dashboard Summary Quality Trial Commerce" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay"><i data-lucide="eye" class="view-icon"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Dashboard Summary Quality Trial Commerce</h3>
+                            <p class="project-desc">Analisis hasil Trial Commerce dan Top Defect</p>
+                            <div class="project-tools">
+                                <span class="tool-badge">Looker Studio</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="btn-secondary" style="font-size: 0.8rem; padding: 4px 8px; border:none; color: var(--accent);">Detail &rarr;</span>
+                                <div class="project-kpi"><i data-lucide="bar-chart-2"></i> Pass Rate 77%</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 5 -->
+                    <article class="project-card card hover-effect" 
+                        data-title="Dashboard Daily QC Development - Sample Room"
+                        data-img="Dashboard Project/Daily QC Sample Room.png"
+                        data-desc="Dashboard harian monitoring kualitas sample"
+                        data-problem="Tidak ada visibilitas harian pass rate per model"
+                        data-solution="Dashboard dengan filter Season, Model, Week"
+                        data-tools="Looker Studio"
+                        data-impact="Manajer bisa ambil tindakan cepat"
+                        data-kpi="Top Defect: 36.9%">
+                        <div class="project-img-wrapper">
+                            <img src="Dashboard Project/Daily QC Sample Room.png" alt="Dashboard Daily QC Development" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay"><i data-lucide="eye" class="view-icon"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Dashboard Daily QC Development</h3>
+                            <p class="project-desc">Dashboard harian monitoring kualitas sample</p>
+                            <div class="project-tools">
+                                <span class="tool-badge">Looker Studio</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="btn-secondary" style="font-size: 0.8rem; padding: 4px 8px; border:none; color: var(--accent);">Detail &rarr;</span>
+                                <div class="project-kpi"><i data-lucide="bar-chart-2"></i> Top Defect: 36.9%</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 6 -->
+                    <article class="project-card card hover-effect" 
+                        data-title="Dashboard Performance TQC & Skills Matrix"
+                        data-img="Dashboard Project/TQC & Skills Matrix.png"
+                        data-desc="Evaluasi performa auditor TQC dan Skills Matrix"
+                        data-problem="Sulit identifikasi auditor dan checkpoint yang lemah"
+                        data-solution="Dashboard audit 1,800 checkpoints"
+                        data-tools="Looker Studio"
+                        data-impact="Dasar untuk program pelatihan"
+                        data-kpi="150 Audit">
+                        <div class="project-img-wrapper">
+                            <img src="Dashboard Project/TQC & Skills Matrix.png" alt="Dashboard Performance TQC & Skills Matrix" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay"><i data-lucide="eye" class="view-icon"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Dashboard Performance TQC & Skills Matrix</h3>
+                            <p class="project-desc">Evaluasi performa auditor TQC dan Skills Matrix</p>
+                            <div class="project-tools">
+                                <span class="tool-badge">Looker Studio</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="btn-secondary" style="font-size: 0.8rem; padding: 4px 8px; border:none; color: var(--accent);">Detail &rarr;</span>
+                                <div class="project-kpi"><i data-lucide="bar-chart-2"></i> 150 Audit</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 7 -->
+                    <article class="project-card card hover-effect" 
+                        data-title="Dashboard CFA Validation by T1QM"
+                        data-img="Dashboard Project/Validasi CFA.png"
+                        data-desc="Validasi akurasi inspeksi CFA oleh T1QM"
+                        data-problem="Risiko miss inspection sebelum shipment"
+                        data-solution="Dashboard komparasi Regular vs Critical Destination"
+                        data-tools="Looker Studio"
+                        data-impact="Menjaga kualitas output"
+                        data-kpi="Pass Rate 97%">
+                        <div class="project-img-wrapper">
+                            <img src="Dashboard Project/Validasi CFA.png" alt="Dashboard CFA Validation by T1QM" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay"><i data-lucide="eye" class="view-icon"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Dashboard CFA Validation by T1QM</h3>
+                            <p class="project-desc">Validasi akurasi inspeksi CFA oleh T1QM</p>
+                            <div class="project-tools">
+                                <span class="tool-badge">Looker Studio</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="btn-secondary" style="font-size: 0.8rem; padding: 4px 8px; border:none; color: var(--accent);">Detail &rarr;</span>
+                                <div class="project-kpi"><i data-lucide="bar-chart-2"></i> Pass Rate 97%</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 8 -->
+                    <article class="project-card card hover-effect" 
+                        data-title="TQC Rotation Performance Dashboard"
+                        data-img="Dashboard Project/Performa Rotasi TQC.png"
+                        data-desc="Mengukur efektivitas program rotasi TQC vs RQC"
+                        data-problem="Tidak ada parameter untuk mengukur TQC"
+                        data-solution="Dashboard Match Rate, Mis-Match Rate"
+                        data-tools="Looker Studio"
+                        data-impact="Membuktikan program rotasi efektif"
+                        data-kpi="Match Rate 95.37%">
+                        <div class="project-img-wrapper">
+                            <img src="Dashboard Project/Performa Rotasi TQC.png" alt="TQC Rotation Performance Dashboard" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay"><i data-lucide="eye" class="view-icon"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">TQC Rotation Performance Dashboard</h3>
+                            <p class="project-desc">Mengukur efektivitas program rotasi TQC vs RQC</p>
+                            <div class="project-tools">
+                                <span class="tool-badge">Looker Studio</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="btn-secondary" style="font-size: 0.8rem; padding: 4px 8px; border:none; color: var(--accent);">Detail &rarr;</span>
+                                <div class="project-kpi"><i data-lucide="bar-chart-2"></i> Match Rate 95.37%</div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+        MODAL POP-UP CONTAINER
+        Hanya ada 1 container kosong. JS akan menyisipkan
+        isinya saat card di atas diklik.
+        ========================================== -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content card">
+            <button class="close-modal" aria-label="Close Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Konten akan disisipkan di sini oleh JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+        FOOTER
+        ========================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">RA.</div>
+                <p>&copy; 2026 Ridwan Ardiansyah. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>

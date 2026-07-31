@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Profesional Ridwan Ardiansyah - Quality Product Integrity Specialist & AppSheet Developer">
+    <title>Ridwan Ardiansyah | Portfolio</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="sticky-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Beranda">
+                <span class="logo-text">RA<span class="accent-dot">.</span></span>
+            </a>
+            
+            <!-- PERBAIKAN: Mengubah div menjadi button agar bisa diakses via keyboard (Tab) -->
+            <button class="menu-toggle" id="mobile-menu" aria-expanded="false" aria-controls="nav-links" aria-label="Buka menu navigasi">
+                <i data-lucide="menu" aria-hidden="true"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-btn" aria-label="Ganti mode terang/gelap">
+                <i data-lucide="moon" class="moon-icon" aria-hidden="true"></i>
+                <i data-lucide="sun" class="sun-icon" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="greeting">Halo, Saya</p>
+                    <h1 class="name">RIDWAN ARDIANSYAH</h1>
+                    <h2 class="title">QA Specialist | Quality Analyst | QMS | Footwear Manufacturing | Power BI, AppSheet, No-Code/Low-Code | HSE</h2>
+                    <p class="summary">
+                        Profesional di bidang <strong><i>Quality Assurance</i></strong> dan Sistem Manajemen Mutu dengan pengalaman di industri manufaktur alas kaki. Berpengalaman merancang arsitektur data, membangun ekosistem <strong><i>AppSheet</i></strong>, dan berkolaborasi dengan <strong>AI</strong> untuk memvisualisasikan insight via <i>Power BI & Looker Studio</i> demi efisiensi operasional..
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">
+                            <i data-lucide="folder-open" aria-hidden="true"></i> Lihat Project
+                        </a>
+                        <!-- PERBAIKAN: Menambahkan atribut download untuk file CV -->
+                        <a href="Profile/CV-Ridwan Ardiansyah_Ind-1.pdf" download class="btn btn-secondary">
+                            <i data-lucide="download" aria-hidden="true"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <!-- PERBAIKAN: Menambahkan fetchpriority untuk gambar utama agar dimuat lebih dulu -->
+                        <img src="Profile/Profile 1.png" alt="Foto Profil Ridwan Ardiansyah" id="profile-img" fetchpriority="high">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <!-- (Isi bagian ini tetap sama karena sudah sangat baik secara semantik) -->
+            <div class="container">
+                <div class="section-header">
+                    <h2><i data-lucide="user" aria-hidden="true"></i> About Me</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="about-content card">
+                    <p>
+                        Sebagai seorang <strong>Quality Analyst</strong> dengan pengalaman di <strong>industri manufaktur alas kaki</strong>, saya memiliki keunggulan dalam memahami standar <strong>QMS & QA</strong> di lantai produksi dan menerjemahkannya menjadi solusi digital yang efektif.
+                    </p>
+                    <p>
+                        Saya berspesialisasi dalam membangun sistem otomasi <em>No-Code/Low-Code</em> menggunakan <strong>AppSheet</strong> dan mengubah data operasional menjadi <em>insight</em> yang bisa ditindaklanjuti melalui <strong>Power BI, Power Query, dan Looker Studio</strong>. Dalam setiap project, saya berkolaborasi dengan AI untuk merancang struktur data, memetakan alur proses, dan memvalidasi logika agar solusi yang dibangun tepat sasaran.
+                    </p>
+                    <p>
+                        Dengan pemahaman di bidang <strong>HSE</strong> dan perbaikan berkelanjutan, saya berfokus pada efisiensi operasional, konsistensi kualitas, dan transformasi digital untuk mencapai keunggulan manufaktur.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding bg-alt">
+            <!-- (Isi bagian ini tetap sama, hanya penambahan aria-hidden pada icon) -->
+            <div class="container">
+                <div class="section-header">
+                    <h2><i data-lucide="cpu" aria-hidden="true"></i> Expertise & Skills</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="technical-skills card">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AppSheet Development</span>
+                                <span>95%</span>
+                            </div>
+                            <!-- PERBAIKAN: Menambahkan atribut aksesibilitas untuk progress bar -->
+                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Looker Studio & Data Visualization</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Google Workspace (Sheets, Apps Script)</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Quality Assurance</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soft-skills card">
+                        <h3>Soft Skills & Competencies</h3>
+                        <div class="tags-container">
+                            <span class="tag"><i data-lucide="check-circle-2" aria-hidden="true"></i> Problem Solving</span>
+                            <span class="tag"><i data-lucide="check-circle-2" aria-hidden="true"></i> Analytical Thinking</span>
+                            <span class="tag"><i data-lucide="check-circle-2" aria-hidden="true"></i> Process Optimization</span>
+                            <span class="tag"><i data-lucide="check-circle-2" aria-hidden="true"></i> Project Management</span>
+                            <span class="tag"><i data-lucide="check-circle-2" aria-hidden="true"></i> Cross-functional Collaboration</span>
+                            <span class="tag"><i data-lucide="check-circle-2" aria-hidden="true"></i> Data-Driven Decision Making</span>
+                            <span class="tag"><i data-lucide="check-circle-2" aria-hidden="true"></i> Continuous Improvement</span>
+                            <span class="tag"><i data-lucide="check-circle-2" aria-hidden="true"></i> Quality Inspection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i data-lucide="briefcase" aria-hidden="true"></i> Work Experience</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card hover-effect">
+                            <h3 class="job-title">QIP Dept. - Quality Product Integrity</h3>
+                            <h4 class="company">PT Parkland World Indonesia 3 - Jepara</h4>
+                            <!-- PERBAIKAN: Menggunakan tag <time> untuk SEO yang lebih baik -->
+                            <span class="date"><i data-lucide="calendar" aria-hidden="true"></i> <time datetime="2024">2024</time> - Present</span>
+                            <p>Validasi hasil <i>Trial Sample Development Stage</i> dan membuat laporan hasil validasi <i>Trial Sample Development Stage</i>.</p>
+                            <p>Menyampaikan hasil Validasi <i>Trial Sample Development Stage</i> pada <i>Review Meeting</i> dan <i>Production Simulation</i>.</p>
+                            <p>Analisa Risk & Assesment Critical Quality.</p>
+                            <p>Menentukan <i>critical process</i> berdasarkan hasil <i>Critical Quality Risk Assessment</i> untuk mendukung pengendalian kualitas produksi.</p>
+                            <p>Melakukan training tentang <i>Critical Point Quality</i> dari model baru pada <i>QIP Production</i> dan <i>Production Team</i></p>
+                            <p>Mengembangkan sistem <i>Project Measurement Product Weight</i> untuk monitoring konsistensi berat produk berbasis data.</p>
+                            <p>Membuat data laporan dan melakukan analisa trend dan konsistensi dari hasil <i>Project System Measurement Product Weight</i>.</p>
+                            <p>Mengembangkan sistem digitalisasi pelaporan data berbasis <i>AppSheet</i>, <i>Google Spreadsheet</i>, dan <i>Looker Studio</i> untuk monitoring kualitas dan analisis tren.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card hover-effect">
+                            <h3 class="job-title">Freelance Health, Safety, and Environment Staff</h3>
+                            <h4 class="company">PT Budi Makmur Jayamurni - Yogyakarta</h4>
+                            <span class="date"><i data-lucide="calendar" aria-hidden="true"></i> <time datetime="2023">2023</time> - <time datetime="2023">2023</time></span>
+                            <p>Manajemen data pembelian, penggunaan, dan stok bahan kimia untuk pengolahan kulit.</p>
+                            <p>Melakukan input dan analisis data hasil uji lingkungan serta membuat laporan evaluasi penaatan hasil uji.</p>
+                            <p>Melakukan pemantauan dan evaluasi hasil uji kadar Ammonia (NH3) di lingkungan Perusahaan.</p>
+                            <p>Melakukan audit internal keselamatan dan kesehatan kerja di lingkungan perusahaan.</p>
+                            <p>Melakukan persiapan dokumen dan lapangan untuk audit sertifikasi SLF (Sustainable Leather Foundation)</p>
+                            <p>Melakukan persiapan dokumen dan lapangan untuk audit sertifikasi ISO 14001:2015</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card hover-effect">
+                            <h3 class="job-title">HSE Intern</h3>
+                            <h4 class="company">PT Budi Makmur Jayamurni - Yogyakarta</h4>
+                            <span class="date"><i data-lucide="calendar" aria-hidden="true"></i> <time datetime="2022">2022</time> - <time datetime="2023">2023</time></span>
+                            <p>Membantu melakukan monitoring pemakaian bahan kimia yang aman dan ramah lingkungan.</p>
+                            <p>Melakukan manajemen gudang bahan kimia finishing terhadap aspek keselamatan dan kesehatan kerja.</p>
+                            <p>Mengikuti pelatihan penanganan bahan kimia dari Piel Color/ STAHL</p>
+                            <p>Membantu persiapan dokumen dan lapangan untuk audit LWG (Leather Working Group).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Credentials Section -->
+        <section id="education" class="education-section section-padding bg-alt">
+            <!-- (Sama dengan sebelumnya, menambahkan tag <time> dan aria-hidden) -->
+            <div class="container">
+                <div class="section-header">
+                    <h2><i data-lucide="graduation-cap" aria-hidden="true"></i> Education & Credentials</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="grid-2-cols">
+                    <div class="card hover-effect">
+                        <h3 class="card-title-icon"><i data-lucide="book-open" aria-hidden="true"></i> Formal Education</h3>
+                        <div class="edu-item">
+                            <h4>Diploma 3 - Teknologi Pengolahan Kulit</h4>
+                            <p class="institution">Politeknik ATK Yogyakarta</p>
+                            <span class="year"><time datetime="2020">2020</time> - <time datetime="2023">2023</time></span>
+                            <p class="desc">Mempelajari teori penyamakan kulit mentah hingga menjadi finished leather sebelum dibuat produk.</p>
+                            <p class="desc">Praktikum proses penyamakan kulit dari raw material hingga finished leather.</p>
+                            <p class="desc">Analisis defect raw material dan proses produksi.</p>
+                            <p class="desc">Pengujian fisis, kimiawi, dan organoleptik sesuai standar SNI.</p>
+                            <p class="desc">Implementasi proyek K3 manajemen gudang bahan kimia.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card hover-effect">
+                        <h3 class="card-title-icon"><i data-lucide="award" aria-hidden="true"></i> Certifications & Organization</h3>
+                        <ul class="cert-list">
+                            <li>
+                                <strong>Google Data Analytics Professional Certificate</strong>
+                                <span>Coursera | <time datetime="2022">2022</time></span>
+                            </li>
+                            <li>
+                                <strong>AppSheet App Developer Certification</strong>
+                                <span>Google Cloud | <time datetime="2022">2022</time></span>
+                            </li>
+                            <li>
+                                <strong>Six Sigma Green Belt</strong>
+                                <span>Lembaga Sertifikasi Profesi | <time datetime="2021">2021</time></span>
+                            </li>
+                            <li>
+                                <strong>Ketua Divisi R&D</strong>
+                                <span>Himpunan Mahasiswa Teknik Industri | <time datetime="2018">2018</time>-<time datetime="2019">2019</time></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i data-lucide="mail" aria-hidden="true"></i> Get In Touch</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info card">
+                        <h3>Mari Berkolaborasi!</h3>
+                        <p>Saya selalu terbuka untuk mendiskusikan peluang proyek, implementasi sistem otomatisasi, atau sekadar berbagi wawasan mengenai industri manufaktur dan analisis data.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i data-lucide="map-pin" aria-hidden="true"></i>
+                                <span>Jepara, Jawa Tengah, Indonesia</span>
+                            </div>
+                            <div class="contact-method">
+                                <i data-lucide="mail-open" aria-hidden="true"></i>
+                                <span>ridwan.ardi26@gmail.com</span>
+                            </div>
+                            <div class="contact-method">
+                                <i data-lucide="linkedin" aria-hidden="true"></i>
+                                <span>linkedin.com/in/ridwan-ardi26/</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container card">
+                        <!-- PERBAIKAN: Menambahkan form action, method, atribut name, dan status feedback -->
+                        <form id="contact-form" class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nama</label>
+                                <!-- Tambahan atribut name="..." sangat penting agar data terbaca oleh sistem -->
+                                <input type="text" id="name" name="user_name" placeholder="Masukkan nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="user_email" placeholder="contoh@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" name="user_message" rows="5" placeholder="Tuliskan pesan atau penawaran Anda..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" id="submit-btn">
+                                <i data-lucide="send" aria-hidden="true"></i> <span id="btn-text">Kirim Pesan</span>
+                            </button>
+                            
+                            <!-- Tempat untuk memunculkan pesan sukses/error setelah tombol diklik -->
+                            <div id="form-status" class="form-status-message" aria-live="polite" style="display: none; margin-top: 15px; font-size: 0.9rem; text-align: center;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">RA.</div>
+                <p>&copy; 2026 Ridwan Ardiansyah. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ridwan-ardi26" aria-label="Kunjungi profil LinkedIn saya"><i data-lucide="linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Ridwan-Ardi26" aria-label="Kunjungi profil GitHub saya"><i data-lucide="github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
